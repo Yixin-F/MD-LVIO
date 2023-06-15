@@ -1,12 +1,12 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/fyx/seu_lvio/src/fast_gicp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_c7013"
-[1/2] Building C object CMakeFiles/cmTC_c7013.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_c7013
-FAILED: cmTC_c7013 
-: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2   CMakeFiles/cmTC_c7013.dir/CheckSymbolExists.c.o  -o cmTC_c7013   && :
-CMakeFiles/cmTC_c7013.dir/CheckSymbolExists.c.o：在函数‘main’中：
+Run Build Command:"/usr/bin/ninja" "cmTC_3452f"
+[1/2] Building C object CMakeFiles/cmTC_3452f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3452f
+FAILED: cmTC_3452f 
+: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2   CMakeFiles/cmTC_3452f.dir/CheckSymbolExists.c.o  -o cmTC_3452f   && :
+CMakeFiles/cmTC_3452f.dir/CheckSymbolExists.c.o：在函数‘main’中：
 CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
@@ -29,11 +29,11 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/fyx/seu_lvio/src/fast_gicp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_fde48"
-[1/2] Building C object CMakeFiles/cmTC_fde48.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_fde48
-FAILED: cmTC_fde48 
-: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2 -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_fde48.dir/CheckFunctionExists.c.o  -o cmTC_fde48  -lpthreads && :
+Run Build Command:"/usr/bin/ninja" "cmTC_79e56"
+[1/2] Building C object CMakeFiles/cmTC_79e56.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_79e56
+FAILED: cmTC_79e56 
+: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2 -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_79e56.dir/CheckFunctionExists.c.o  -o cmTC_79e56  -lpthreads && :
 /usr/bin/x86_64-linux-gnu-ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

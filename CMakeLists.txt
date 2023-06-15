@@ -131,7 +131,7 @@ if(BUILD_VGICP_CUDA)
   )
   target_include_directories(fast_vgicp_cuda PRIVATE
     include
-    thirdparty/Eigen
+    ${EIGEN3_INCLUDE_DIR}
     thirdparty/nvbio
     ${catkin_INCLUDE_DIRS}
   )

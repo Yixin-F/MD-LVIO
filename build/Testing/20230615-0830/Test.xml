@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20230615-0638-Experimental"
+	BuildStamp="20230615-0830-Experimental"
 	Name="fyx"
 	Generator="ctest-3.10.2"
 	CompilerName="/usr/bin/c++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="7815"
 	TotalPhysicalMemory="15886"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="4070"
+	ProcessorClockFrequency="3989.31"
 	>
 	<Testing>
-		<StartDateTime>Jun 15 14:49 CST</StartDateTime>
-		<StartTestTime>1686811771</StartTestTime>
+		<StartDateTime>Jun 15 16:30 CST</StartDateTime>
+		<StartTestTime>1686817811</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jun 15 14:49 CST</EndDateTime>
-		<EndTestTime>1686811771</EndTestTime>
+		<EndDateTime>Jun 15 16:30 CST</EndDateTime>
+		<EndTestTime>1686817811</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

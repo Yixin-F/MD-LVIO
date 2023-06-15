@@ -1,0 +1,4 @@
+2023.6.15
+cuda加速编译不通过 ，需要cmake版本在3.18以上
+问题解释：https://github.com/mfkiwl/fast-gicp-1  and https://github.com/koide3/hdl_graph_slam/issues/204
+问题解决：https://blog.csdn.net/weixin_35757704/article/details/112557853
