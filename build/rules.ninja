@@ -156,7 +156,7 @@ rule CXX_SHARED_LIBRARY_LINKER__gtest
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -H/home/fyx/seulo/src/fast_gicp -B/home/fyx/seulo/src/fast_gicp/build
+  command = /usr/bin/cmake -H/home/fyx/seu_lvio/src/fast_gicp -B/home/fyx/seu_lvio/src/fast_gicp/build
   description = Re-running CMake...
   generator = 1
 

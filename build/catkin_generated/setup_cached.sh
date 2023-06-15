@@ -7,10 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/fyx/seulo/src/fast_gicp/build/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/fyx/seulo/src/fast_gicp/build/devel/lib:$LD_LIBRARY_PATH"
+export CMAKE_PREFIX_PATH="/home/fyx/seu_lvio/src/fast_gicp/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/fyx/seu_lvio/src/fast_gicp/build/devel/lib:$LD_LIBRARY_PATH"
 export PATH='/opt/ros/melodic/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/fyx/.local/bin:/home/fyx/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/fyx/.local/bin:/home/fyx/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.4/bin'
-export PKG_CONFIG_PATH="/home/fyx/seulo/src/fast_gicp/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/fyx/seulo/src/fast_gicp/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/fyx/seulo/src/fast_gicp/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/fyx/seulo/src/fast_gicp:$ROS_PACKAGE_PATH"
+export PKG_CONFIG_PATH="/home/fyx/seu_lvio/src/fast_gicp/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/fyx/seu_lvio/src/fast_gicp/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/fyx/seu_lvio/src/fast_gicp/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/fyx/seulo/src/fast_gicp:/home/fyx/seu_lvio/src/fast_gicp:$ROS_PACKAGE_PATH"

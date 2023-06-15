@@ -67,8 +67,8 @@ set(fast_gicp_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(fast_gicp_SOURCE_PREFIX /home/fyx/seulo/src/fast_gicp)
-  set(fast_gicp_DEVEL_PREFIX /home/fyx/seulo/src/fast_gicp/build/devel)
+  set(fast_gicp_SOURCE_PREFIX /home/fyx/seu_lvio/src/fast_gicp)
+  set(fast_gicp_DEVEL_PREFIX /home/fyx/seu_lvio/src/fast_gicp/build/devel)
   set(fast_gicp_INSTALL_PREFIX "")
   set(fast_gicp_PREFIX ${fast_gicp_DEVEL_PREFIX})
 else()

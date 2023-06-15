@@ -7,7 +7,6 @@ This package is a collection of GICP-based fast point cloud registration algorit
 - FastVGICP: multi-threaded and voxelized GICP algorithm (**\~70FPS**)
 - FastVGICPCuda: CUDA-accelerated voxelized GICP algorithm (**\~120FPS**)
 - NDTCuda: CUDA-accelerated D2D NDT algorithm (**\~500FPS**)
-![proctime](data/proctime.png)
 
 [![Build](https://github.com/SMRT-AIST/fast_gicp/actions/workflows/build.yml/badge.svg)](https://github.com/SMRT-AIST/fast_gicp/actions/workflows/build.yml) on melodic & noetic
 
