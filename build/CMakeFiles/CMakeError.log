@@ -1,0 +1,41 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/fyx/seulo/src/fast_gicp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_f2e1a"
+[1/2] Building C object CMakeFiles/cmTC_f2e1a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f2e1a
+FAILED: cmTC_f2e1a 
+: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2   CMakeFiles/cmTC_f2e1a.dir/CheckSymbolExists.c.o  -o cmTC_f2e1a   && :
+CMakeFiles/cmTC_f2e1a.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/fyx/seulo/src/fast_gicp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/fyx/seulo/src/fast_gicp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_e1122"
+[1/2] Building C object CMakeFiles/cmTC_e1122.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e1122
+FAILED: cmTC_e1122 
+: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2 -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_e1122.dir/CheckFunctionExists.c.o  -o cmTC_e1122  -lpthreads && :
+/usr/bin/x86_64-linux-gnu-ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
