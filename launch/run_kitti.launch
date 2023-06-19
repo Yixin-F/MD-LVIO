@@ -1,0 +1,11 @@
+<launch>
+
+    <arg name="project" default="fast_gicp"/>
+
+    <!-- Parameters -->
+    <rosparam file="/home/fyx/seu_lvio/src/fast_gicp/launch/run_kitti.launch"  command="load" />
+
+    <!--- ufo -->
+    <node pkg="$(arg project)" type="$(arg project)_ufo"   name="$(arg project)_ufo"   output="screen"/>
+
+</launch>

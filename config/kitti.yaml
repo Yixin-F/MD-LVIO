@@ -1,0 +1,80 @@
+common:
+  out_path_: "/home/fyx/ufo_hiahia/src/out"
+  kNumOmpCores_: 6
+  save_bool_: true
+  gpu_bool_: false  # if use gpu 
+  bag_bool_: false  # rosbag
+  bin_bool_: true  # bin or pcd
+  skip_num_: 1  # minmus 1
+  ri_bool_: true
+  tc_bool_: true
+  # https://blog.csdn.net/qq_18213223/article/details/104360634
+  tr_v_: [4.276802385584e-04, -9.999672484946e-01, -8.084491683471e-03, -1.198459927713e-02, 
+            -7.210626507497e-03, 8.081198471645e-03, -9.999413164504e-01, -5.403984729748e-02, 
+            9.999738645903e-01, 4.859485810390e-04, -7.206933692422e-03, -2.921968648686e-01,
+            0,                                         0,                                         0,                                             1                                       ]
+
+session:
+  data_path_: "/media/fyx/YixinF/Semantic_KITTI/dataset/sequences/00/velodyne/"
+  label_path_: "/media/fyx/YixinF/Semantic_KITTI/dataset/sequences/00/labels/"
+  pose_path_: "/media/fyx/YixinF/Semantic_KITTI/dataset/sequences/00/poses.txt"
+  start_id_: 0
+  end_id_: 4540
+
+ssc:
+  ori_path_: "/ori/"
+  seg_path_: "/seg/"
+  map_path_: "/map/"
+  evaluate_path_: "/evaluate/"
+
+  min_range_: 2.0
+  max_range_: 50.0
+  min_angle_: 0.0
+  max_angle_: 360.0
+  min_azimuth_: -30.0
+  max_azimuth_: 60.0
+
+  range_res_: 0.2
+  sector_res_: 1.2
+  azimuth_res_: 2.0
+
+  toBeClass_: 10
+
+  iteration_: 3  # intensity refine
+  intensity_max_: 200.0
+  intensity_diff_: 3.0
+  intensity_cov_: 1.5
+  
+
+feature:
+  sensor_height_: 1.73  # x-y 0
+  min_z_: -1.5
+
+  kOneThird_: 0.333  # geometry parameters
+  kLinearityMax_: 288.9
+  kPlanarityMax_: 288.9
+  kScatteringMax_: 2889.9
+  kOmnivarianceMax_: 0.278636
+  kAnisotropyMax_: 1248.0
+  kEigenEntropyMax_: 0.956129
+  kChangeOfCurvatureMax_: 0.99702
+  kNPointsMax_: 13200.0
+
+  car_height_: 0.5  # plus sensor_height e.g., 0.5 + 1.73 = 2.23 m
+  car_quare_: 15.0
+
+  building_: 0  # symbol
+  tree_: 1
+  car_: 2
+
+dynamic:
+  # about semantic-label: https://github.com/PRBonn/semantic-kitti-api/blob/master/auxiliary/laserscan.py#L238 / https://ask.csdn.net/questions/7650597
+  dynamic_label_: [252, 253, 254, 255, 256, 257, 258, 259]  
+  occupancy_: 0.5
+  respond_score_: 0.6
+
+
+
+
+
+  

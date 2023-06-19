@@ -67,40 +67,40 @@ void test(Registration& reg, const pcl::PointCloud<pcl::PointXYZ>::ConstPtr& tar
   fitness_score = reg.getFitnessScore();
   double single = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() / 1e6;
 
-  std::cout << "single:" << single << "[msec] " << std::flush;
+  std::cout << "single:" << single << "[msec] " <<  fitness_score << std::endl;
 
-  // 100 times
-  t1 = std::chrono::high_resolution_clock::now();
-  for (int i = 0; i < 100; i++) {
-    reg.clearTarget();
-    reg.clearSource();
-    reg.setInputTarget(target);
-    reg.setInputSource(source);
-    reg.align(*aligned);
-  }
-  t2 = std::chrono::high_resolution_clock::now();
-  double multi = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() / 1e6;
-  std::cout << "100times:" << multi << "[msec] " << std::flush;
+  // // 100 times
+  // t1 = std::chrono::high_resolution_clock::now();
+  // for (int i = 0; i < 100; i++) {
+  //   reg.clearTarget();
+  //   reg.clearSource();
+  //   reg.setInputTarget(target);
+  //   reg.setInputSource(source);
+  //   reg.align(*aligned);
+  // }
+  // t2 = std::chrono::high_resolution_clock::now();
+  // double multi = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() / 1e6;
+  // std::cout << "100times:" << multi << "[msec] " << std::flush;
 
-  // for some tasks like odometry calculation,
-  // you can reuse the covariances of a source point cloud in the next registration
-  t1 = std::chrono::high_resolution_clock::now();
-  pcl::PointCloud<pcl::PointXYZ>::ConstPtr target_ = target;
-  pcl::PointCloud<pcl::PointXYZ>::ConstPtr source_ = source;
-  for (int i = 0; i < 100; i++) {
-    reg.swapSourceAndTarget();
-    reg.clearSource();
+  // // for some tasks like odometry calculation,
+  // // you can reuse the covariances of a source point cloud in the next registration
+  // t1 = std::chrono::high_resolution_clock::now();
+  // pcl::PointCloud<pcl::PointXYZ>::ConstPtr target_ = target;
+  // pcl::PointCloud<pcl::PointXYZ>::ConstPtr source_ = source;
+  // for (int i = 0; i < 100; i++) {
+  //   reg.swapSourceAndTarget();
+  //   reg.clearSource();
 
-    reg.setInputTarget(target_);
-    reg.setInputSource(source_);
-    reg.align(*aligned);
+  //   reg.setInputTarget(target_);
+  //   reg.setInputSource(source_);
+  //   reg.align(*aligned);
 
-    target_.swap(source_);
-  }
-  t2 = std::chrono::high_resolution_clock::now();
-  double reuse = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() / 1e6;
+  //   target_.swap(source_);
+  // }
+  // t2 = std::chrono::high_resolution_clock::now();
+  // double reuse = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() / 1e6;
 
-  std::cout << "100times_reuse:" << reuse << "[msec] fitness_score:" << fitness_score << std::endl;
+  // std::cout << "100times_reuse:" << reuse << "[msec] fitness_score:" << fitness_score << std::endl;
 }
 
 /**
@@ -148,24 +148,24 @@ int main(int argc, char** argv) {
 
   std::cout << "target:" << target_cloud->size() << "[pts] source:" << source_cloud->size() << "[pts]" << std::endl;
 
-  std::cout << "--- pcl_gicp ---" << std::endl;
-  pcl::GeneralizedIterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> pcl_gicp;
-  test_pcl(pcl_gicp, target_cloud, source_cloud);
+  // std::cout << "--- pcl_gicp ---" << std::endl;
+  // pcl::GeneralizedIterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> pcl_gicp;
+  // test_pcl(pcl_gicp, target_cloud, source_cloud);
 
-  std::cout << "--- pcl_ndt ---" << std::endl;
-  pcl::NormalDistributionsTransform<pcl::PointXYZ, pcl::PointXYZ> pcl_ndt;
-  pcl_ndt.setResolution(1.0);
-  test_pcl(pcl_ndt, target_cloud, source_cloud);
+  // std::cout << "--- pcl_ndt ---" << std::endl;
+  // pcl::NormalDistributionsTransform<pcl::PointXYZ, pcl::PointXYZ> pcl_ndt;
+  // pcl_ndt.setResolution(1.0);
+  // test_pcl(pcl_ndt, target_cloud, source_cloud);
 
-  std::cout << "--- fgicp_st ---" << std::endl;
-  fast_gicp::FastGICPSingleThread<pcl::PointXYZ, pcl::PointXYZ> fgicp_st;
-  test(fgicp_st, target_cloud, source_cloud);
+  // std::cout << "--- fgicp_st ---" << std::endl;
+  // fast_gicp::FastGICPSingleThread<pcl::PointXYZ, pcl::PointXYZ> fgicp_st;
+  // test(fgicp_st, target_cloud, source_cloud);
 
-  std::cout << "--- fgicp_mt ---" << std::endl;
-  fast_gicp::FastGICP<pcl::PointXYZ, pcl::PointXYZ> fgicp_mt;
-  // fast_gicp uses all the CPU cores by default
-  // fgicp_mt.setNumThreads(8);
-  test(fgicp_mt, target_cloud, source_cloud);
+  // std::cout << "--- fgicp_mt ---" << std::endl;
+  // fast_gicp::FastGICP<pcl::PointXYZ, pcl::PointXYZ> fgicp_mt;
+  // // fast_gicp uses all the CPU cores by default
+  // // fgicp_mt.setNumThreads(8);
+  // test(fgicp_mt, target_cloud, source_cloud);
 
   std::cout << "--- vgicp_st ---" << std::endl;
   fast_gicp::FastVGICP<pcl::PointXYZ, pcl::PointXYZ> vgicp;
@@ -178,15 +178,15 @@ int main(int argc, char** argv) {
   test(vgicp, target_cloud, source_cloud);
 
 #ifdef USE_VGICP_CUDA
-  std::cout << "--- ndt_cuda (P2D) ---" << std::endl;
-  fast_gicp::NDTCuda<pcl::PointXYZ, pcl::PointXYZ> ndt_cuda;
-  ndt_cuda.setResolution(1.0);
-  ndt_cuda.setDistanceMode(fast_gicp::NDTDistanceMode::P2D);
-  test(ndt_cuda, target_cloud, source_cloud);
+  // std::cout << "--- ndt_cuda (P2D) ---" << std::endl;
+  // fast_gicp::NDTCuda<pcl::PointXYZ, pcl::PointXYZ> ndt_cuda;
+  // ndt_cuda.setResolution(1.0);
+  // ndt_cuda.setDistanceMode(fast_gicp::NDTDistanceMode::P2D);
+  // test(ndt_cuda, target_cloud, source_cloud);
 
-  std::cout << "--- ndt_cuda (D2D) ---" << std::endl;
-  ndt_cuda.setDistanceMode(fast_gicp::NDTDistanceMode::D2D);
-  test(ndt_cuda, target_cloud, source_cloud);
+  // std::cout << "--- ndt_cuda (D2D) ---" << std::endl;
+  // ndt_cuda.setDistanceMode(fast_gicp::NDTDistanceMode::D2D);
+  // test(ndt_cuda, target_cloud, source_cloud);
 
   std::cout << "--- vgicp_cuda (parallel_kdtree) ---" << std::endl;
   fast_gicp::FastVGICPCuda<pcl::PointXYZ, pcl::PointXYZ> vgicp_cuda;

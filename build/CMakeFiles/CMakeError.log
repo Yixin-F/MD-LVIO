@@ -39,3 +39,41 @@ collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/fyx/seu_lvio/src/fast_gicp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0f6b2 && [1/2] Building C object CMakeFiles/cmTC_0f6b2.dir/src.c.o
+[2/2] Linking C executable cmTC_0f6b2
+FAILED: cmTC_0f6b2 
+: && /usr/bin/x86_64-linux-gnu-gcc-6 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2  CMakeFiles/cmTC_0f6b2.dir/src.c.o -o cmTC_0f6b2   && :
+CMakeFiles/cmTC_0f6b2.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x67)：对‘pthread_join’未定义的引用
+src.c:(.text+0x7b)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
