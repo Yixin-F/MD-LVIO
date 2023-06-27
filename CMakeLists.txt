@@ -14,6 +14,7 @@ else()
 endif()
 
 set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_CXX_STANDARD 17) # C++17 to use stdc++fs
 
 find_package(PCL REQUIRED)
 find_package(Eigen3 REQUIRED)
@@ -44,6 +45,23 @@ if(BUILD_VGICP_CUDA)
   link_directories(${CUDA_LIBRARY_DIRS})
 endif()
 
+# ssc
+find_package(catkin REQUIRED COMPONENTS
+  tf
+  roscpp
+  rospy
+  # pcl library
+  pcl_conversions
+  # msgs
+  std_msgs
+  sensor_msgs
+  geometry_msgs
+  nav_msgs
+  message_generation
+)
+include_directories(include ${catkin_INCLUDE_DIRS} )
+
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -51,6 +69,13 @@ if(catkin_FOUND)
   catkin_package(
     INCLUDE_DIRS include
     LIBRARIES fast_gicp
+
+    std_msgs
+    nav_msgs
+    geometry_msgs
+    sensor_msgs
+    message_runtime 
+    message_generation
   )
 endif()
 
@@ -92,6 +117,14 @@ if(BUILD_apps)
   target_link_libraries(gicp_kitti
     ${PCL_LIBRARIES}
     fast_gicp
+  )
+
+  add_executable(gicp_ssc src/main_ssc.cpp)
+  add_dependencies(gicp_ssc fast_gicp)
+  target_link_libraries(gicp_ssc
+    ${PCL_LIBRARIES} 
+    fast_gicp
+    stdc++fs
   )
 endif()
 
@@ -191,3 +224,4 @@ elseif (ament_cmake_FOUND)
       DESTINATION include
     )
 endif()
+

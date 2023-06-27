@@ -4,5 +4,5 @@ Name: fast_gicp
 Description: Description of fast_gicp
 Version: 0.0.0
 Cflags: -I/home/fyx/seu_lvio/src/fast_gicp/include
-Libs: -L${prefix}/lib -lfast_gicp
+Libs: -L${prefix}/lib -lfast_gicp -lstd_msgs -lnav_msgs -lgeometry_msgs -lsensor_msgs -lmessage_runtime -lmessage_generation
 Requires: 

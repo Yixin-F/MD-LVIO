@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20230627-0721-Experimental"
+	Name="fyx"
+	Generator="ctest-3.19.2"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="8.4.0"
+	OSName="Linux"
+	Hostname="fyx"
+	OSRelease="5.4.0-150-generic"
+	OSVersion="#167~18.04.1-Ubuntu SMP Wed May 24 00:51:42 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="158"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="7815"
+	TotalPhysicalMemory="15886"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4077.92"
+	>
+	<Testing>
+		<StartDateTime>Jun 27 17:23 CST</StartDateTime>
+		<StartTestTime>1687857787</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 27 17:23 CST</EndDateTime>
+		<EndTestTime>1687857787</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

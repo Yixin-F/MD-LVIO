@@ -71,6 +71,9 @@
         "random": "cpp",
         "set": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "*.ipp": "cpp",
+        "valarray": "cpp",
+        "forward_list": "cpp"
     }
 }

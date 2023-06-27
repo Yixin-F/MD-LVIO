@@ -116,7 +116,7 @@ if(NOT "include " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "fast_gicp")
+set(libraries "fast_gicp;std_msgs;nav_msgs;geometry_msgs;sensor_msgs;message_runtime;message_generation")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
