@@ -19,6 +19,6 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 
 ##### You can see the result now
 <centre>
-<img src="image/rrt.png" width="40%">
+<img src="https://github.com/Yixin-F/MD-LVIO/doc/result.png" width="40%">
 </centre>
 
