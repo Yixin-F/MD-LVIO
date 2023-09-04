@@ -44,11 +44,27 @@ by the perspective of humans, who recognize scenes through identifying semantic 
 </centre>
 
 #### 2) Evaluation on Kitti
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpr.png" width="60%"> <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpkitti.png" width="60%"> 
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpr.png" width="50%"> <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpkitti.png" width="50%"> 
 
 ### 3. Multi-Session Map Fusion
 Long-term 3D map management is a fundamental capability required by a robot to reliably navigate in the non-stationary real-world. [This paper](https://github.com/Yixin-F/LT-mapper_fyx) develops open-source, modular, and readily available LiDAR-based lifelong mapping
 for urban sites. This is achieved by dividing the problem into successive subproblems: multi-session SLAM (MSS), high/low dynamic change detection, and positive/negative change management. The proposed method leverages MSS and minimizes
 potential trajectory error; thus, a manual or good initial alignment is not required for change detection. Our change management scheme preserves efficacy in both memory and computation costs, providing automatic object segregation from a large-scale point cloud map.
+
+#### 1) SLAM Result in Different Session for Parkinglot
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/parkinglot.png" width="40%">
+</centre>
+
+#### 2) Pose Graph Constrain Using Isam2
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/pose.png" width="60%">
+</centre>
+
+#### 3) Map Fusion
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lt.gif" width="60%">
+</centre>
+
 
 
