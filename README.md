@@ -15,3 +15,6 @@ tracking approach, allowing for the effective removal of high dynamic objects an
 Consequently, a high-quality static instance map in the global coordinate system is generated.
 4) The proposed method is quantitatively and qualitatively evaluated on the KITTI dataset and the custom dataset.
 Finally, we demonstrate that our proposed approach outperforms the state-of-the-art studies in static mapping
+
+##### You can see the result now
+
