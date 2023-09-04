@@ -25,3 +25,13 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="100%">
 </centre>
 
+#### 1) Evaluation on Kitti
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/kitti.png" width="100%">
+</centre>
+
+#### 1) Evaluation on Our Custom Dataset
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/custom.png" width="100%">
+</centre>
+
