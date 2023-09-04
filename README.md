@@ -22,7 +22,7 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 
 #### 1) System Overview
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="100%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="80%">
 </centre>
 
 #### 2) Evaluation on Kitti
@@ -37,6 +37,6 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 
 ### 2. Graph-Based Relocalization
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/graph.png" width="100%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/graph.png" width="70%">
 </centre>
 
