@@ -1,9 +1,10 @@
 ## MD-LVIO
 ### This repo belongs to my own postgraduate research project, so the whole project will be opensource until I graduate from SEU !!
-- Dynamic-Aware LIO with GPU Accelaration (half-done)
-- Graph-Based Relocalization (done)
-- Multi-Session Map Fusion (done)
+- Dynamic-Aware LIO with GPU Accelaration (Half-done)
+- Graph-Based Relocalization (Done)
+- Multi-Session Map Fusion (Done)
 - Object-Level Detection and Update (Todo)
+- Application (Done)
 
 #### Segmented Curved-Voxel Occupancy Descriptor for Dynamic-aware LiDAR Odometry and Mapping (TGRS)
 The main contributions are as follows:
