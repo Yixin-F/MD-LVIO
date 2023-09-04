@@ -17,4 +17,7 @@ Consequently, a high-quality static instance map in the global coordinate system
 Finally, we demonstrate that our proposed approach outperforms the state-of-the-art studies in static mapping
 
 ##### You can see the result now
+<centre>
+<img src="image/rrt.png" width="40%">
+</centre>
 
