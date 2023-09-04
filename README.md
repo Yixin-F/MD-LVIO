@@ -9,7 +9,7 @@
 ### 0. Our sensing platform
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/platform.png" width="50%">
 
-### 1. Segmented Curved-Voxel Occupancy Descriptor for Dynamic-aware LiDAR Odometry and Mapping (TGRS)
+### 1. Dynamic-Aware LIO with GPU Accelaration 
 The main contributions are as follows:
 1) We propose a novel egocentric descriptor called [Segmented Curved-Voxel Occupancy Descriptor (SCV-OD)](https://github.com/Yixin-F/DR-Using-SCV-OD), based on which a dynamic-aware and LiDAR-only
 SLAM framework is built for mobile sensing with various sensor types in unknown and complex environments.
@@ -25,13 +25,18 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="100%">
 </centre>
 
-#### 1) Evaluation on Kitti
+#### 2) Evaluation on Kitti
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/kitti.png" width="100%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/kitti.png" width="60%">
 </centre>
 
-#### 1) Evaluation on Our Custom Dataset
+#### 3) Evaluation on Our Custom Dataset
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/custom.png" width="100%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/custom.png" width="60%">
+</centre>
+
+### 2. Graph-Based Relocalization
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/graph.png" width="100%">
 </centre>
 
