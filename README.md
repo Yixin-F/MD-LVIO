@@ -44,5 +44,6 @@ by the perspective of humans, who recognize scenes through identifying semantic 
 </centre>
 
 #### 2) Evaluation on Kitti
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpr.png" width="60%"> <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpkitti.png" width="60%"> 
 
 
