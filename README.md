@@ -46,4 +46,9 @@ by the perspective of humans, who recognize scenes through identifying semantic 
 #### 2) Evaluation on Kitti
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpr.png" width="60%"> <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lpkitti.png" width="60%"> 
 
+### 3. Multi-Session Map Fusion
+Long-term 3D map management is a fundamental capability required by a robot to reliably navigate in the non-stationary real-world. [This paper](https://github.com/Yixin-F/LT-mapper_fyx) develops open-source, modular, and readily available LiDAR-based lifelong mapping
+for urban sites. This is achieved by dividing the problem into successive subproblems: multi-session SLAM (MSS), high/low dynamic change detection, and positive/negative change management. The proposed method leverages MSS and minimizes
+potential trajectory error; thus, a manual or good initial alignment is not required for change detection. Our change management scheme preserves efficacy in both memory and computation costs, providing automatic object segregation from a large-scale point cloud map.
+
 
