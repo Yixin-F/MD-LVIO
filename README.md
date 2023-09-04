@@ -66,5 +66,18 @@ potential trajectory error; thus, a manual or good initial alignment is not requ
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/lt.gif" width="60%">
 </centre>
 
+### 4. Object-Level Detection and Update
+#### It's still under research, so comming soon !!
+
+### 5. Application
+#### Applied to urban power distribution road scanning, just show the result 
+
+#### 1) Sence and Equipments
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/sence.jpg" width="40%"> <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/equipment.jpg" width="40%"> 
+
+#### 2) Result
+<centre>
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/app.png" width="60%">
+</centre>
 
 
