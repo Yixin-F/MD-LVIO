@@ -22,6 +22,6 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 
 #### 1) System Overview
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="40%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="100%">
 </centre>
 
