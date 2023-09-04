@@ -6,10 +6,10 @@
 - Object-Level Detection and Update (Todo)
 - Application (Done)
 
-### Our sensing platform
+### 0. Our sensing platform
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/platform.png" width="50%">
 
-### Segmented Curved-Voxel Occupancy Descriptor for Dynamic-aware LiDAR Odometry and Mapping (TGRS)
+### 1. Segmented Curved-Voxel Occupancy Descriptor for Dynamic-aware LiDAR Odometry and Mapping (TGRS)
 The main contributions are as follows:
 1) We propose a novel egocentric descriptor called [Segmented Curved-Voxel Occupancy Descriptor (SCV-OD)](https://github.com/Yixin-F/DR-Using-SCV-OD), based on which a dynamic-aware and LiDAR-only
 SLAM framework is built for mobile sensing with various sensor types in unknown and complex environments.
@@ -20,8 +20,8 @@ Consequently, a high-quality static instance map in the global coordinate system
 4) The proposed method is quantitatively and qualitatively evaluated on the KITTI dataset and the custom dataset.
 Finally, we demonstrate that our proposed approach outperforms the state-of-the-art studies in static mapping
 
-#### You can see our result and sensing platform now
+#### 1) System Overview
 <centre>
-<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/result.png" width="40%">
+<img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/framework.png" width="40%">
 </centre>
 
