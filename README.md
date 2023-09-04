@@ -36,6 +36,8 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 </centre>
 
 ### 2. Graph-Based Relocalization
+Unlike most of the existing methods that focus on extracting local, global, and statistical features of raw point clouds, our method aims at the semantic level that can be superior in terms of robustness to environmental changes. Inspired
+by the perspective of humans, who recognize scenes through identifying semantic objects and capturing their relations, [this paper](https://github.com/kxhit/SG_PR) presents a novel semantic graph based approach for place recognition. First, we propose a novel semantic graph representation for the point cloud scenes by reserving the semantic and topological information of the raw point cloud. Thus, place recognition is modeled as a graph matching problem. Then we design a fast and effective graph similarity network to compute the similarity. Exhaustive evaluations on the KITTI dataset show that our approach is robust to the occlusion as well as viewpoint changes and outperforms the state-of-theart methods with a large margin.
 #### 1) Framework
 <centre>
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/graph.png" width="70%">
