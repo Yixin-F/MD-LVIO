@@ -1,5 +1,5 @@
 ## MD-LVIO
-### This repo belongs to my own postgraduate research project !! 
+### This repo belongs to my own postgraduate research project, so the whole project will be opensource until I graduate from SEU !!
 - Dynamic-Aware LIO with GPU Accelaration (done)
 - Graph-Based Relocalization (done)
 - Multi-Session Map Fusion (done)
