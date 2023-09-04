@@ -36,7 +36,11 @@ Finally, we demonstrate that our proposed approach outperforms the state-of-the-
 </centre>
 
 ### 2. Graph-Based Relocalization
+#### 1) Framework
 <centre>
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/graph.png" width="70%">
 </centre>
+
+#### 2) Evaluation on Kitti
+
 
