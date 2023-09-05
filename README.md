@@ -18,7 +18,7 @@ tracking approach, allowing for the effective removal of high dynamic objects an
 3) We modify VGICP as the pipeline for the SCV-OD, efficiently estimating initial motions at 10 Hz and update LiDAR poses with considering dynamic removal at 15 -20 Hz.
 Consequently, a high-quality static instance map in the global coordinate system is generated.
 4) The proposed method is quantitatively and qualitatively evaluated on the KITTI dataset and the custom dataset.
-Finally, we demonstrate that our proposed approach outperforms the state-of-the-art studies in static mapping
+Finally, we demonstrate that our proposed approach outperforms the state-of-the-art studies in static mapping.
 
 #### 1) System Overview
 <centre>
