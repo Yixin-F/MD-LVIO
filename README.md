@@ -67,7 +67,7 @@ potential trajectory error; thus, a manual or good initial alignment is not requ
 </centre>
 
 ### 4. Object-Level Detection and Update
-#### It's still under research, so comming soon !! But you can find a simple version in [map_generation](https://github.com/Yixin-F/map_generation)
+#### It's still under research, so comming soon !! But you can find a simple version in [map_generation](https://github.com/Yixin-F/map_generation) and [defference detection](https://github.com/Yixin-F/difference_detection)
 
 ### 5. Application
 #### Applied to urban power distribution road scanning, just show the result 
