@@ -6,6 +6,8 @@
 - Object-Level Detection and Update (Todo)
 - Application (Done)
 
+### please see  https://github.com/Yixin-F/better_fastlio2
+
 ### 0. Our sensing platform
 <img src="https://github.com/Yixin-F/MD-LVIO/blob/main/doc/platform.png" width="50%">
 
